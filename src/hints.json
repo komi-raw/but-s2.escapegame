@@ -1,0 +1,58 @@
+{
+  "no-hint": {
+    "title": "Je suis sur que tu peux réussir !",
+    "message": "C'est tellement simple, pas besoin d'indice !"
+  },
+  "0": {
+    "title": "Un coup de pouce",
+    "message": "Regarde la vidéo puis clique sur NEXT pour commencer le jeu !"
+  },
+  "1": {
+    "title": "Un coup de pouce",
+    "message": "Regarde ! Un indice dépasse du pantalon du garde..."
+  },
+  "2": {
+    "title": "Un coup de pouce",
+    "message": "Parcours les différentes vues avec ta souris, tu y trouveras des indices et des aides en cliquant dessus. Les indices sont des nombres décimaux que tu devras convertir en binaire et en hexadecimal !"
+  },
+  "10": {
+    "title": "Un coup de pouce",
+    "message": "Tu as accès à certaines commandes telles que ascii et login, tu devrais essayer de les utiliser ! J'espère que tu as bien retenu le code, sinon il faudra recommencer {{ face-grin-squint-tears }} !"
+  },
+  "20": {
+    "title": "Un coup de pouce ",
+    "message": "Regarde, tu as accès à de nouvelles commandes (PRESS TAB 2x). Qu'est ce que ce fichier fait dans la racine ? Tu devrais essayer de le lire ! Il est sûr qu’un grand sage t’as déjà dit lâche ta souris, utilise ton clavier !"
+  },
+  "30": {
+    "title": "Un coup de pouce ",
+    "message": "Le contenu de ce fichier n'est pas anodin. Une ligne devrait t'interpeller, on n'utilise pas de lettres capitales pour aucune raison ! Cela devrait t'aider à trouver la commande à taper... Un autre grand sage a sûrement déjà dû te dire que le manuel est la bible du développeur."
+  },
+  "40": {
+    "title": "Un coup de pouce ",
+    "message": "Le texte t'indique une série de commandes à taper (à partir de \"son périple commença...\"). Regarde les éléments en gras et respecte bien les actions et les noms indiqués."
+  },
+  "50": {
+    "title": "Un coup de pouce",
+    "message": "Il semblerait qu'un nouveau dossier soit disponible dans la racine... Ouvre le, à l'intérieur se trouve des fichiers qui ne demandent qu'à être lus, l'un d'eux pourrait être important."
+  },
+  "60": {
+    "title": "Un coup de pouce",
+    "message": "Oh, tu n'as pas accès au fichier. Leur mot de passe est lié aux permissions d'accès des fichiers. Le mot de passe sera sous la forme *** (avec * = un entier). Tu peux utiliser man permissions si tu ne sais plus comment faire."
+  },
+  "90": {
+    "title": "Un coup de pouce",
+    "message": "Tu as deja ouvert le fichier OSI : Lis le bien attentivement, la prochaine commande est à portée de main."
+  },
+  "100": {
+    "title": "Un coup de pouce",
+    "message": "Pour passer d'un réseau à une session, il faut transporter les informations."
+  },
+  "110": {
+    "title": "Un coup de pouce",
+    "message": "Regarde bien les libellés des adresses entrantes..."
+  },
+  "120": {
+    "title": "Un coup de pouce",
+    "message": "Trace une route entre ton adresse IP et l'adresse IP de ton équipe ! Rappelle toi de ton IP et du masque réseau que tu as calculé."
+  }
+}

@@ -1,0 +1,84 @@
+@import 'sweetalert2/src/variables';
+
+// Theme variables
+$dark-color: #161616;
+$accent-color: #ffc700;
+$disabled-color: #808080;
+$white-color: #fff;
+
+$swal2-backdrop: rgba($dark-color, 0.8);
+
+$swal2-button-focus-background: rgba($accent-color, .3);
+
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: 5px;
+$swal2-confirm-button-background-color: rgba(43, 21, 21, 0);
+$swal2-confirm-button-color: $dark-color;
+$swal2-confirm-button-focus-box-shadow: none;
+
+$swal2-deny-button-border: 0;
+$swal2-deny-button-border-radius: 5px;
+$swal2-deny-button-background-color: rgba(43, 21, 21, 0);
+$swal2-deny-button-color: $dark-color;
+$swal2-deny-button-focus-box-shadow: none;
+
+$swal2-cancel-button-border: 0;
+$swal2-cancel-button-border-radius: 5px;
+$swal2-cancel-button-background-color: rgba(255, 255, 255, 0);
+$swal2-cancel-button-color: $dark-color;
+$swal2-cancel-button-focus-box-shadow: none;
+
+$swal2-button-darken-hover: rgba($accent-color, 1);
+$swal2-button-darken-active: rgba($accent-color, 1);
+$swal2-button-focus-box-shadow: none;
+
+$swal2-close-button-border-radius: 50%;
+$swal2-close-button-hover-background: rgb(242, 242, 242);
+$swal2-close-button-hover-color: $swal2-close-button-color;
+
+$swal2-actions-margin: 1em 0 0 0;
+
+$swal2-show-animation: 0.5s appear;
+$swal2-hide-animation: none;
+/*0.5s disappear*/
+
+
+$swal2-border: 1px solid #b9b9b9;
+$swal2-padding: 1em 0;
+$swal2-html-container-margin: 0 1em;
+$swal2-html-container-color: $dark-color;
+
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+@import 'sweetalert2/src/sweetalert2';
+
+.swal2-styled {
+    &[disabled] {
+        opacity: 1;
+        color: $disabled-color;
+    }
+
+    &:focus {
+        background-color: $swal2-button-focus-background;
+    }
+}

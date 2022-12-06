@@ -1,0 +1,7 @@
+.coup-de-pouce img {
+    height: 40px;
+}
+
+.coup-de-pouce:hover {
+    cursor: pointer;
+}

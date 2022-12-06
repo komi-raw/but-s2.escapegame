@@ -1,0 +1,27 @@
+#video {
+    height: 90%;
+    width: 100%;
+}
+
+#nextStep {
+    position: fixed;
+    height: 5rem;
+    width: 5rem;
+    top: 90%;
+    left: 48%;
+}
+
+#nextStep img {
+    height: 100%;
+    width: 100%;
+}
+
+#nextStep:hover {
+    cursor: pointer;
+}
+
+#scene0 {
+    overflow: hidden;
+    z-index: 100;
+}
+

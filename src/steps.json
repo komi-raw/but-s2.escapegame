@@ -1,0 +1,38 @@
+{
+  "1": {
+    "title": "Des gardes pas très malins !",
+    "message": "Tu devrais en interpeller un garde ! {{ bullhorn | red }}"
+  },
+  "2": {
+    "title": "Un petit conseil",
+    "message": "Ouvre bien l'oeil , des indices et des aides sont cachés autour de toi !"
+  },
+  "10": {
+    "title": "Un système un peu bizarre...",
+    "message": "On dirait que tu es arrivé sur un vieux système un peu trafiqué, tu devrais essayer quelques commandes pour t'y faire, mais pas sur que tu retrouves toutes les commandes que tu as appris en entraînement... Ah oui et essayes de ne pas tout supprimer ! {{ bomb | red }}"
+  },
+  "60": {
+    "title": "Un mot de passe pour échapper aux permissions ?",
+    "message": "L'un de ces fichiers contient des éléments importants pour la suite de ta mission !"
+  },
+  "gameOver": {
+    "title": "Tu as perdu",
+    "message": "Le temps est écoulé, le boss du groupe terroriste est rentré avant que tu aies pu accomplir ta mission et t'enfuir {{ skull | white}}"
+  },
+  "100": {
+    "title": "Un problème OSI dur qu'il n'y paraît",
+    "message": "Trouve la bonne configuration pour ton matériel."
+  },
+  "110": {
+    "title": "A l'écoute de ton équipe ?",
+    "message": "Utilise l'utilitaire tshark afin de voir si tu ne retrouves rien de familier..."
+  },
+  "120": {
+    "title": "Traçons des routes",
+    "message": "Une route te permettra de rentrer en contact avec une adresse IP externe."
+  },
+  "130": {
+    "title": "Enfin ! Plus qu'à contacter ton équipe !",
+    "message": "N'oubliez pas : I.C.M.P."
+  }
+}

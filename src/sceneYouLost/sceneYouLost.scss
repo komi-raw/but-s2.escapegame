@@ -1,0 +1,85 @@
+#sceneYouLost img {
+    height: 100%;
+    width: 100%;
+    animation: clignoter 0.8s infinite;
+    transition: none;
+}
+
+#sceneYouLost {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+
+#retry {
+    position: absolute;
+    height: 17vh;
+    width: 22vw;
+    z-index: 100;
+    top: 78%;
+    left: 37%;
+}
+
+#retry:hover {
+    cursor: pointer;
+}
+
+#sceneYouLost .scanlines:before {
+    content: '';
+    display: block;
+    animation: vline calc(var(--time, 2) * 1s) linear infinite;
+}
+
+@keyframes vline {
+    to {
+        transform: translate(0, 100vh)
+    }
+}
+
+
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.9;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

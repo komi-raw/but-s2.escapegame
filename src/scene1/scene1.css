@@ -1,0 +1,567 @@
+#vue {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#scene1 {
+    overflow: hidden;
+}
+
+#fleche {
+    display: flex;
+    width: 3vw;
+    height: 6vh;
+    z-index: 20;
+}
+
+#left :hover {
+    cursor: pointer;
+}
+
+#bottom :hover {
+    cursor: pointer;
+}
+
+#right :hover {
+    cursor: pointer;
+}
+
+#top :hover {
+    cursor: pointer;
+}
+
+#left {
+    position: absolute;
+    background-color: transparent;
+    top: 46%;
+    left: 10%;
+    margin: 0px;
+    border: transparent;
+}
+
+/* Boutons */
+#right {
+    position: absolute;
+    background-color: transparent;
+    top: 46%;
+    left: 85%;
+    margin: 0px;
+    border: transparent;
+}
+
+
+#bottom {
+    position: absolute;
+    background-color: transparent;
+    top: 85%;
+    left: 50%;
+    margin: 0px;
+    border: transparent;
+}
+
+#top {
+    position: absolute;
+    background-color: transparent;
+    top: 10%;
+    left: 50%;
+    margin: 0%;
+    border: transparent;
+}
+
+#back img {
+    height: 100%;
+    width: 100%;
+}
+
+#back {
+    position: absolute;
+    background: rgb(182, 181, 177);
+    height: 10vh;
+    width: 5vw;
+    top: 82%;
+    left: 50%;
+    border-radius: 30%;
+}
+
+#back:hover {
+    cursor: pointer;
+}
+
+#backToLockL:hover,
+#backToLockD:hover {
+    cursor: pointer;
+}
+
+#backToLockL,
+#backToLockD {
+    position: absolute;
+    top: -19%;
+    left: 45%;
+    width: 3vw;
+    height: 6vh;
+    z-index: 20;
+}
+
+#backToLockD img,
+#backToLockL img {
+    height: 100%;
+    width: 100%;
+}
+
+#cadena_gauche {
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    width: 7vw;
+    height: 13vh;
+    background-color: transparent;
+}
+
+#cadena_droite {
+    position: absolute;
+    top: 47%;
+    left: 77%;
+    width: 7vw;
+    height: 13vh;
+    background-color: transparent;
+}
+
+
+#cadena_droite :hover,
+#cadena_gauche :hover {
+    border: solid transparent;
+    cursor: grab;
+}
+
+
+
+#cadena_gauche img,
+#cadena_droite img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#enigmeCadenaGauche {
+    position: absolute;
+    background: transparent;
+    height: 50vh;
+    width: 100vh;
+    left: 28%;
+    top: 20%;
+}
+
+#enigmeCadenaDroite {
+    position: absolute;
+    background: transparent;
+    height: 50vh;
+    width: 100vh;
+    left: 28%;
+    top: 20%;
+}
+
+#btsBinaryCode {
+    display: flex;
+    background: black;
+    width: 24vw;
+    height: 6vh;
+    top: 40%;
+    left: 22%;
+    position: absolute;
+
+}
+
+#btsHexaCode {
+    display: flex;
+    background: black;
+    width: 6vw;
+    height: 6vh;
+    top: 40%;
+    left: 42%;
+    position: absolute;
+}
+
+.btBinaryCode {
+    border: solid black;
+    width: 3vw;
+    height: 6vh;
+    background: white;
+    color: black;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btHexaCode {
+    border: solid black;
+    width: 3vw;
+    height: 6vh;
+    background: white;
+    color: black;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.btBinaryCode:hover {
+    cursor: copy;
+    background: rgb(192, 192, 192);
+    color: black;
+}
+
+.btHexaCode:hover {
+    cursor: copy;
+    background: rgb(192, 192, 192);
+    color: black;
+}
+
+#btUnlockLeft {
+    position: absolute;
+    background: black;
+    outline: none;
+    height: 6vh;
+    width: 6vw;
+    left: 40%;
+    top: 60%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    vertical-align: middle;
+}
+
+#btUnlockRight {
+    position: absolute;
+    background: black;
+    outline: none;
+    height: 6vh;
+    width: 6vw;
+    left: 42%;
+    top: 60%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    vertical-align: middle;
+}
+
+#btUnlockLeft:hover {
+    cursor: url('./images/cursorCadena.png'), auto;
+    background: rgb(15, 15, 15);
+}
+
+#btUnlockRight:hover {
+    cursor: url('./images/cursorCadena.png'), auto;
+    background: rgb(15, 15, 15);
+}
+
+.cursorUnlock {
+    cursor: url('./images/cadena_unlock.png'), auto;
+}
+
+#lockL {
+    position: absolute;
+    height: 10vh;
+    width: 5vw;
+    left: 41%;
+    top: 10%;
+}
+
+#lockR img,
+#lockL img,
+#unlockR img,
+#unlockL img {
+    width: 100%;
+    height: 100%;
+}
+
+#lockR {
+    position: absolute;
+    height: 10vh;
+    width: 5vw;
+    top: 10%;
+    left: 43%;
+}
+
+#unlockL {
+    position: absolute;
+    height: 12vh;
+    width: 5vw;
+    left: 41%;
+    top: 7%;
+}
+
+#unlockR {
+    position: absolute;
+    height: 12vh;
+    width: 5vw;
+    left: 43%;
+    top: 13%;
+}
+
+/* Indices */
+
+#btIndice1 {
+    width: 10vw;
+    height: 10vh;
+    position: absolute;
+    top: 18%;
+    left: 74%;
+    /* border:solid green; */
+}
+
+#btIndice2 {
+    width: 11vw;
+    height: 6vh;
+    position: absolute;
+    top: 17%;
+    left: 30%;
+    /*border: solid red; */
+}
+
+#btIndice2 img, #btIndice3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#btIndice3 {
+    width: 5.5vw;
+    height: 12vh;
+    position: absolute;
+    top: 24%;
+    left: 56%;
+    /* border: solid blue;   */
+}
+
+/* Add loupe cursor*/
+#btIndice1 :hover {
+    cursor: url('./images/megaphone.png'), help;
+}
+
+#btIndice2 :hover {
+    cursor: url('./images/loupe.png'), help;
+}
+
+#btIndice3 :hover {
+    cursor: url('./images/loupe.png'), help;
+}
+
+#indice1Garde {
+    position: absolute;
+    height: 90vh;
+    width: 20vw;
+    left: 55%;
+    top: 9.62%;
+}
+
+#indice1Garde img {
+    height: 100%;
+    width: 100%;
+}
+
+#indice1Carnet {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+#indice1Carnet img {
+    height: 100%;
+    width: 100%;
+}
+
+#btIndice1Carnet {
+    position: absolute;
+    height: 7vh;
+    width: 5vw;
+    top: 60%;
+    left: 60%;
+    /* border: solid yellow; */
+}
+
+#btIndice1Carnet :hover {
+    cursor: url('./images/loupe.png'), help;
+}
+
+#codeAscii {
+    position: absolute;
+    top: 45%;
+    left: 36%;
+    font-size: 2rem;
+    transform: rotate(10deg);
+    color: rgb(97, 97, 97);
+    font-family: "Virgil", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Indices 2*/
+#indice2 {
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    height: 50vh;
+    width: 50vw;
+}
+
+#indice2 p {
+    position: absolute;
+    height: 25vh;
+    width: 25vw;
+    left: 20%;
+    top: 12.5%;
+    font-size: 3rem;
+    font-family: "Orbitron", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(241, 125, 52);
+}
+
+/* Aide Hexa */
+#aideHexa img,
+#btAideHexa img {
+    height: 100%;
+    width: 100%;
+}
+
+#aideHexa {
+    position: absolute;
+    height: 29.5vh;
+    width: 19.7vw;
+    left: 73%;
+    top: 9%;
+}
+
+#btAideHexa {
+    position: absolute;
+    /* border: solid slateblue; */
+    height: 7vh;
+    width: 5vw;
+    left: 93.5%;
+    top: 24%;
+    z-index: 20;
+}
+
+#btAideHexa:hover {
+    cursor: url('./images/telecommande.png'), help;
+}
+
+/* Aide Binaire */
+#aideBin img,
+#btAideBin img {
+    height: 100%;
+    width: 100%;
+}
+
+#aideBin {
+    position: absolute;
+    /* border: solid salmon; */
+    height: 30vh;
+    width: 30vw;
+    left: 38%;
+    top: 35%;
+}
+
+#btAideBin {
+    position: absolute;
+    /* border: solid slateblue; */
+    height: 7vh;
+    width: 5vw;
+    left: 37.5%;
+    top: 53%;
+    z-index: 20;
+}
+
+/* remplacer cursor avec l aide miniaturisée*/
+#btAideBin:hover {
+    cursor: url('./images/helpBinaryCursor.png'), help;
+}
+
+
+
+/*Indices 3 */
+#indice3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#indice3 img {
+    width: 100%;
+    height: 100%;
+}
+
+#indice3 p {
+    position: absolute;
+    height: 25vh;
+    width: 25vw;
+    left: 65%;
+    top: 82.5%;
+    font-size: 3rem;
+    font-family: "Virgil", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+/*Easters egg cursors*/
+#btTelevision {
+    width: 3vw;
+    height: 5vh;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    /* border:solid rgb(121, 28, 120); */
+}
+
+#btTelevision img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Telecommande */
+#btTelevision:hover {
+    cursor: url('./images/telecommande.png'), auto;
+}
+
+#shrek img {
+    width: 100%;
+    height: 100%;
+}
+
+#shrek {
+    position: absolute;
+    width: 25vw;
+    height: 38vh;
+    top: 29%;
+    left: 22%;
+}
+
+#porte img {
+    height: 100%;
+    width: 100%;
+}
+
+#porte {
+    position: absolute;
+    height: 38vh;
+    width: 11vw;
+    left: 54%;
+    top: 30%;
+}
+
+#porte:hover {
+    cursor: url('./images/porte.png'), pointer;
+}
+
+/* Invisible class */
+.invisible {
+    display: none;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}

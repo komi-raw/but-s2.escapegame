@@ -1,0 +1,46 @@
+{
+  "wrong-password": {
+    "title": "C'est seulement le commencement...",
+    "message": "On dirait qu'il te manque quelque chose..."
+  },
+  "easter-egg": {
+    "title": "Oh un easter egg !",
+    "message": "Bravo tu as trouvé un easter egg ! {{ egg | wheat }}"
+  },
+  "code-ascii": {
+    "title": "Un code ? A quoi pourrait-il servir ?",
+    "message": "Un conseil, RETIENS ABSOLUMENT CE CODE, il pourrait te servir pour la prochaine étape, si toutefois tu arrives à te libérer ... "
+  },
+  "guard": {
+    "title": "Un garde sauvage apparaît !",
+    "message": "Le garde vient te prévenir qu'il va chercher son boss et que tu en as plus pour longtemps à vivre !"
+  },
+  "aide-ascii": {
+    "title": "ASCIIparait, ça pourrait t'être utile !",
+    "message": "Cette table ASCII n'est pas là par hasard... Oh maintenant que j'y pense, ne devais-tu pas retenir quelque chose ?"
+  },
+  "libre": {
+    "title": "Enfin libre !",
+    "message": "Génial, tu as réussi à te libérer ! Il te reste encore du temps pour accomplir ta mission. Pour cela, commence par sortir de cette maudite pièce !"
+  },
+  "video": {
+    "title": "Bio Hazard Trailer",
+    "message": "Bienvenue dans notre escape game, nous te laissons regarder notre trailer avant de commencer. Petite astuce : double clique gauche pour mettre la video en plein écran. Bonne chance !"
+  },
+  "aide-permissions": {
+    "title": "Tu as les droits sur cette aide !",
+    "message": "Fais en bon usage !"
+  },
+  "map": {
+    "title": "Super ! Tu as trouvé l'emplacement de la bombe biologique !",
+    "message": "Maintenant que tu as les infos que tu cherchais, il faut que tu contactes le gouvernement. Il faut qu'ils envoient l'armée pour t'aider a sortir d'ici ! Retourne à la racine, un nouveau dossier pourrait t'intéresser !"
+  },
+  "win": {
+    "title": "Félicitations !",
+    "message": "Tu as sauvé le monde d'une terrible attaque, tu peux être fier !"
+  },
+  "copy": {
+    "title": "Pfffff... On est sur StackOverflow ??",
+    "message": "Franchement ça serait trop facile avec le copier-coller..."
+  }
+}

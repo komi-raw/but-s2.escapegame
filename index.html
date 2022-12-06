@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escape game</title>
+  <script>
+    window.onload = function () {
+      document.querySelector("#loading").style.display = "none";
+    }
+  </script>
+</head>
+
+<body style="overflow: hidden;">
+  <div id="loading" style="background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;">
+    <p>Le jeu est en cours de chargement, veuillez patienter...</p>
+  </div>
+  <div>
+    <audio loop="loop" autoplay="autoplay" id="play">
+      <source src="./src/common/soundtrack/soundtrack.mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+  <div class="scene" id="sceneYouLost">
+    <img id="gameover" src="./src/sceneYouLost/images/gameOver.png" alt="">
+    <div id="retry"></div>
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+  </div>
+
+  <div class="scene" id="sceneYouWin">
+    <img id="gameover" src="./src/sceneYouWin/images/youWin2.png" alt="">
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+  </div>
+
+
+  <div class="scene" id="scene2">
+    <div id="terminal"></div>
+    <div class="flicker"></div>
+    <div class="scanlines"></div>
+  </div>
+
+  <div class="scene" id="scene0">
+    <iframe id="video"
+      src="https://www.youtube.com/embed/wFxSPAAGNyg?modestbranding=1&controls=0&fs=1&rel=0&showinfo=0&disablekb=1"
+      title="YouTube video player" frameborder="0" allowfullscreen>
+    </iframe>
+    <div id="nextStep">
+      <img src="./src/scene0/images/next.png" alt="">
+    </div>
+  </div>
+
+  <div class="scene" id="scene1">
+    <img id="vue" />
+    <!--Boutons indices transparent-->
+    <div id="btIndice1"><img src="./src/scene1/images/bloc_transparent.png" alt=""></div>
+    <div id="btIndice2"><img src="./src/scene1/images/bloc_transparent.png" alt=""></div>
+    <div id="btIndice3"><img src="./src/scene1/images/bloc_transparent.png" alt=""></div>
+
+    <!--Boutons indices 1-->
+    <div id="indice1Garde"><img src="./src/scene1/images/garde.png" alt=""></div>
+    <div id="btIndice1Carnet"><img src="./src/scene1/images/bloc_transparent.png" alt=""></div>
+    <div id="indice1Carnet">
+      <img src="./src/scene1/images/indiceMdpAscii.png" alt="">
+      <p id="codeAscii">50 50 50 50</p>
+    </div>
+
+
+    <!--Indice 2-->
+    <div id="indice2">
+      <img src="./src/scene1/images/indice2.png" alt="">
+      <p id="randomNumberRight">???</p>
+    </div>
+
+    <!-- Aide Hexa Jamie REMPLACER IMAGE PAR JAMIE-->
+    <div id="aideHexa">
+      <img src="./src/scene1/images/JamyTele.png" alt="">
+    </div>
+
+    <div id="btAideHexa">
+      <img src="./src/scene1/images/bloc_transparent.png" alt="">
+    </div>
+
+    <!--Boutons indices 3-->
+    <div id="indice3">
+      <img src="./src/scene1/images/IndicePerfusion.png" alt="">
+      <p id="randomNumberLeft">???</p>
+    </div>
+
+    <!-- Aide Binaire vieux papier-->
+    <div id="aideBin">
+      <img src="./src/scene1/images/helpBinary.png" alt="">
+    </div>
+
+    <div id="btAideBin">
+      <img src="./src/scene1/images/bloc_transparent.png" alt="">
+    </div>
+
+    <div id="back">
+      <img src="src/scene1/images/back.png" alt="">
+    </div>
+
+    <!-- Easters egg cursors-->
+    <div id="easterEgg1">
+      <div id="btTelevision">
+        <img src="./src/scene1/images/bloc_transparent.png" alt="">
+      </div>
+      <img src="./src/scene1/images/shrek.png" alt="" id="shrek">
+    </div>
+
+
+    <div id="cadena_gauche"><img src="./src/scene1/images/cadena.png" alt="" id="cadena"></div>
+    <div id="cadena_droite"><img src="./src/scene1/images/cadena.png" alt="" id="cadena"></div>
+
+    <!-- Enigme cadena Gauche binaire-->
+    <div id="enigmeCadenaGauche">
+
+      <div id="btsBinaryCode">
+        <button id="bt1" class="btBinaryCode" data-id="0">0</button>
+        <button id="bt2" class="btBinaryCode" data-id="1">0</button>
+        <button id="bt3" class="btBinaryCode" data-id="2">0</button>
+        <button id="bt4" class="btBinaryCode" data-id="3">0</button>
+        <button id="bt5" class="btBinaryCode" data-id="4">0</button>
+        <button id="bt6" class="btBinaryCode" data-id="5">0</button>
+        <button id="bt7" class="btBinaryCode" data-id="6">0</button>
+        <button id="bt8" class="btBinaryCode" data-id="7">0</button>
+      </div>
+      <div id="backToLockL"><img src="./src/scene1/images/fleche_haut.png" alt=""></div>
+      <div id="lockL"><img src="./src/scene1/images/lock.png" alt=""></div>
+      <div id="unlockL"><img src="./src/scene1/images/unlock.png" alt=""></div>
+
+      <button id="btUnlockLeft">Unlock</button>
+    </div>
+
+    <!-- Enigme cadena Droite hexa-->
+    <div id="enigmeCadenaDroite">
+      <div id="btsHexaCode">
+        <button id="btHexa1" class="btHexaCode" data-id="0">0</button>
+        <button id="btHexa2" class="btHexaCode" data-id="1">0</button>
+      </div>
+      <div id="backToLockD"><img src="./src/scene1/images/fleche_haut.png" alt=""></div>
+      <div id="lockR"><img src="./src/scene1/images/lock.png" alt=""></div>
+      <div id="unlockR"><img src="./src/scene1/images/unlock.png" alt=""></div>
+      <button id="btUnlockRight">Unlock</button>
+    </div>
+
+    <!-- Porte pour passer à l'etape 2-->
+    <div id="porte"><img src="./src/scene1/images/bloc_transparent.png" alt=""></div>
+
+    <!--Boutons déplacement horizontaux-->
+    <button id="left"> <img src="./src/scene1/images/fleche_gauche.png" alt="" id="fleche"> </button>
+    <button id="right"> <img src="./src/scene1/images/fleche_droite.png" alt="" id="fleche"> </button>
+    <button id="bottom"> <img src="./src/scene1/images/fleche_bas.png" alt="" id="fleche"> </button>
+    <button id="top"> <img src="./src/scene1/images/fleche_haut.png" alt="" id="fleche"> </button>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

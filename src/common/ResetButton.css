@@ -1,0 +1,7 @@
+.reset-button img {
+    height: 40px;
+}
+
+.reset-button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.persistent-notification {
+    z-index: 80;
+    min-height: 50px;
+    min-width: 50px;
+    position: fixed;
+    border-radius: 0.5rem;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
